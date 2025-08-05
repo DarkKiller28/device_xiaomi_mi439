@@ -19,14 +19,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common horizon configuration
+$(call inherit-product, vendor/horizon/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mi439
+PRODUCT_NAME := horizon_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Additional Flag.
+HORIZON_MAINTAINER := 𝔻𝕒𝕣𝕜𝕂𝕚𝕝𝕝𝕖𝕣༆𖣘 
+
+# Recognized ROM As.
+ROM_FOLDER := horizon
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
